@@ -8,6 +8,8 @@ This repository is intentionally separate from the ElectraHub application source
 
 ```text
 electrahub-design-docs/
+├── .gitignore
+├── README.md
 ├── design/
 │   └── architecture/
 │       ├── CSMS_Services_LLD_Alignment_Report.docx
@@ -15,8 +17,10 @@ electrahub-design-docs/
 │       ├── ElectraHub_CSMS_Low_Level_Design.docx
 │       ├── Pricing_Service_High_Level_Design.docx
 │       ├── Pricing_Service_Low_Level_Design.docx
+│       ├── RBAC_Framework_High_Level_Design copy.docx
 │       ├── RBAC_Framework_High_Level_Design.docx
 │       ├── RBAC_Framework_High_Level_Design.md
+│       ├── RBAC_Framework_Low_Level_Design copy.docx
 │       ├── RBAC_Framework_Low_Level_Design.docx
 │       ├── RBAC_Framework_Low_Level_Design.md
 │       ├── WebSocket_Connection_Management_HLD.docx
@@ -33,6 +37,43 @@ electrahub-design-docs/
 - WebSocket connection management design
 - CSMS service LLD alignment
 - REST-to-gRPC migration planning
+
+## Repository Structure
+
+### `design/architecture`
+
+Architecture and service design documents for core ElectraHub platform capabilities.
+
+| File | Purpose |
+|---|---|
+| `CSMS_Services_LLD_Alignment_Report.docx` | Alignment notes across CSMS low-level service designs. |
+| `ElectraHub_CSMS_High_Level_Design.docx` | CSMS high-level architecture and platform design. |
+| `ElectraHub_CSMS_Low_Level_Design.docx` | CSMS low-level service/component design. |
+| `Pricing_Service_High_Level_Design.docx` | Pricing service high-level design. |
+| `Pricing_Service_Low_Level_Design.docx` | Pricing service low-level design. |
+| `RBAC_Framework_High_Level_Design.docx` | RBAC framework high-level design. |
+| `RBAC_Framework_High_Level_Design.md` | Markdown version of the RBAC high-level design. |
+| `RBAC_Framework_Low_Level_Design.docx` | RBAC framework low-level design. |
+| `RBAC_Framework_Low_Level_Design.md` | Markdown version of the RBAC low-level design. |
+| `WebSocket_Connection_Management_HLD.docx` | WebSocket connection management high-level design. |
+| `WebSocket_Connection_Management_LLD.docx` | WebSocket connection management low-level design. |
+
+The `copy.docx` files are preserved as source backups until the canonical RBAC docs are reviewed and deduplicated.
+
+### `migration`
+
+Migration planning documents that cut across services.
+
+| File | Purpose |
+|---|---|
+| `REST-to-gRPC-Migration-Plan.docx` | Migration plan for moving selected ElectraHub service contracts from REST toward gRPC. |
+
+### Root Files
+
+| File | Purpose |
+|---|---|
+| `README.md` | Repository overview and structure. |
+| `.gitignore` | Ignores macOS metadata and Office lock files. |
 
 ## Source Repository
 
