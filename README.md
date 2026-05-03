@@ -10,6 +10,8 @@ This repository is intentionally separate from the ElectraHub application source
 electrahub-design-docs/
 ├── .gitignore
 ├── README.md
+├── analysis/
+│   └── ios-active-charging-sse-events-analysis.md
 ├── design/
 │   └── architecture/
 │       ├── CSMS_Services_LLD_Alignment_Report.docx
@@ -36,9 +38,18 @@ electrahub-design-docs/
 - RBAC framework high-level and low-level design
 - WebSocket connection management design
 - CSMS service LLD alignment
+- iOS/backend incident analysis and handoff notes
 - REST-to-gRPC migration planning
 
 ## Repository Structure
+
+### `analysis`
+
+Investigation notes and handoff reports for active ElectraHub issues.
+
+| File | Purpose |
+|---|---|
+| `ios-active-charging-sse-events-analysis.md` | Analysis report for the iOS active charging screen not receiving backend SSE charging events. |
 
 ### `design/architecture`
 
